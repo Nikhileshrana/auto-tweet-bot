@@ -12,7 +12,7 @@ const TWITTER_ACCESS_SECRET = process.env.TWITTER_ACCESS_SECRET!;
 // Initialize Gemini Flash
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
-export async function GET() {
+export async function POST() {
   try {
     // Step 1: Fetch tour packages from /api/read
     const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/read`);
