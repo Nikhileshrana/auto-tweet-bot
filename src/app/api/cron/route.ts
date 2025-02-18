@@ -27,7 +27,7 @@ export async function GET() {
     console.log("🎉 Selected tour package:", selectedTour);
 
     const { heading1, location, slug } = selectedTour;
-    const tourLink = `https://indiantraveltour.com/tour/${slug}`;
+    const tourLink = `https://www.indiantraveltour.com/tour/${slug}`;
 
     // Step 3: Generate tweet using Gemini Flash
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
