@@ -78,7 +78,7 @@ export async function GET() {
           lifecycleState: "PUBLISHED",
           specificContent: {
               "com.linkedin.ugc.ShareContent": {
-                  shareCommentary: { tweetContent },
+                  shareCommentary: { text: tweetContent },
                   shareMediaCategory: "NONE",
               },
           },
