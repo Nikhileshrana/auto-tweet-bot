@@ -12,8 +12,27 @@ const page = () => {
       
     }
   }
+
+  const testlinkedin = async () => {
+    try {
+      const response = await axios.get('/api/linkedinPost')
+      console.log(response.data)
+    } catch (error) {
+      console.error("❌ Error fetching tour packages:", error)
+      
+    }
+  }
+
+
   return (
+    <>
     <button onClick={start}>Test</button>
+
+    <div className='container mt-20 '>
+      <h1>Test</h1>
+      <button onClick={testlinkedin}>Test Linkedin</button>
+    </div>
+    </>
   )
 }
 
