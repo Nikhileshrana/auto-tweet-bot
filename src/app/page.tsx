@@ -5,8 +5,9 @@ import React from "react";
 const Page = () => {
   const start = async () => {
     try {
-      const response = await axios.post("/api/cron");
-      console.log(response.data);
+      // const response = await axios.post("/api/cron");
+      // console.log(response.data);
+      console.log("🚀 Starting Cron Jobs Verification Needed");
     } catch (error) {
       console.error("❌ Error fetching tour packages:", error);
     }
